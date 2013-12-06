@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Stereo -- zdd</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Left_Image"/>
+    <addaction name="actionOpen_Right_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_Images"/>
+   </widget>
+   <widget class="QMenu" name="menuSFM">
+    <property name="title">
+     <string>SFM</string>
+    </property>
+    <addaction name="actionReconstruct_3D"/>
+   </widget>
+   <widget class="QMenu" name="menuStereo">
+    <property name="title">
+     <string>Stereo</string>
+    </property>
+    <addaction name="actionDisparityMap"/>
+    <addaction name="actionDepth_Map"/>
+    <addaction name="actionCreate_3D"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="action3D_View"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionUsage"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSFM"/>
+   <addaction name="menuStereo"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_Images">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Open Images</string>
+   </property>
+  </action>
+  <action name="actionOpen_Left_Image">
+   <property name="text">
+    <string>Open Left Image</string>
+   </property>
+  </action>
+  <action name="actionOpen_Right_Image">
+   <property name="text">
+    <string>Open Right Image</string>
+   </property>
+  </action>
+  <action name="actionDisparityMap">
+   <property name="text">
+    <string>Disparity Map</string>
+   </property>
+  </action>
+  <action name="actionReconstruct_3D">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Reconstruct 3D</string>
+   </property>
+  </action>
+  <action name="actionDepth_Map">
+   <property name="text">
+    <string>Depth Map</string>
+   </property>
+  </action>
+  <action name="actionCreate_3D">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Create 3D</string>
+   </property>
+  </action>
+  <action name="action3D_View">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>3D View</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About Stereo</string>
+   </property>
+  </action>
+  <action name="actionUsage">
+   <property name="text">
+    <string>Usage</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
